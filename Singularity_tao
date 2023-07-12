@@ -14,7 +14,12 @@ From: nvcr.io/nvidia/tao/tao-toolkit-tf:v3.22.05-tf1.15.5-py3
     opencv-python-headless==4.5.4.60 \
     fiftyone \
     gdown
+    cd /workspace/jupyter_notebook/ && python3 ../source_code/dataset.py
+    cd /workspace/source_code/ && wget 'https://api.ngc.nvidia.com/v2/models/nvidia/tao/pretrained_object_detection/versions/resnet18/files/resnet_18.hdf5'
     
+%files
+    workspace/* /workspace/
+
 %runscript
     "$@"
 

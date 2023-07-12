@@ -8,7 +8,7 @@ import shutil
 
 #url = "https://drive.google.com/uc?id=1E8KaSkexo5U4OhiDIrfUipBbHcvwWCvJ&export=download"
 url = "https://drive.google.com/uc?id=1E8KaSkexo5U4OhiDIrfUipBbHcvwWCvJ&confirm=t"
-output = "dataset_E2ECV.zip"
+output = "/workspace/jupyter_notebook/dataset_E2ECV.zip"
 gdown.download(url, output, quiet=False, proxy=None)
 
 shutil.unpack_archive(output)
